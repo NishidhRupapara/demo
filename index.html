@@ -1,14 +1,211 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline bg-blue-200 text-center text-white w-1/2 display:inline-block mx-auto my-0 mt-10 px-10 py-5 border border-red-700 rounded-lg shadow-lg shadow-red-500/50">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus id iusto laboriosam vero nam quasi aliquam autem tempore quisquam beatae ab laborum, nihil inventore deserunt corrupti rem illo! Fugiat, voluptatum!
-                
-    </h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Food Zone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="text-gray-100 body-font shadow-md bg-transparent sticky top-0 z-50">
+    <div class="container mx-auto flex flex-wrap p-5 flex-row items-center">
+      <span class="text-2xl font-bold text-indigo-400">🍽 Krishna Food Zone</span>
+      <nav class="ml-auto flex flex-wrap items-center text-base space-x-5">
+        <a href="index.html" class="text-gray-100 hover:text-indigo-400">Home</a>
+        <a href="menu.html" class="text-gray-100 hover:text-indigo-400">Menu</a>
+        <a href="#gallery" class="text-gray-100 hover:text-indigo-400">Gallery</a>
+        <a href="#order" class="text-gray-100 hover:text-indigo-400">Order</a>
+        <a href="#about" class="text-gray-100 hover:text-indigo-400">About Us</a>
+        <a href="#contact" class="text-gray-100 hover:text-indigo-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="text-gray-100 body-font text-center">
+    <div class="container px-5 py-24 mx-auto">
+      <h1 class="text-4xl font-bold mb-4">Welcome to Krishna Food Zone</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-lg">
+        Delicious • Hygienic • Affordable Indian Food ❤️
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= FOOD CARDS ================= -->
+  <section class="text-gray-100 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <h1 class="text-3xl font-bold text-center mb-16">
+        Our Food Categories
+      </h1>
+
+      <div class="flex flex-wrap -m-4 justify-center">
+        <!-- ================= INDIAN THALI ================= -->
+        <div class="md:w-1/4 p-2">
+          <div class="bg-white/80 rounded-lg shadow-md overflow-hidden">
+            <img class="h-40 w-full object-cover"
+              src="https://ik.imagekit.io/munchery/blog/tr:w-768/from-punjab-to-tamil-nadu-a-tour-of-ten-indian-thalis.jpeg"
+              id="thali-img" />
+            <div class="p-4">
+              <h2 class="text-lg font-bold mb-2">Indian Thali</h2>
+              <p class="mb-4">Gujarati, Punjabi & South Indian Thali</p>
+              <div class="space-y-2">
+                <button class="food-btn" data-image="https://images.unsplash.com/photo-1625944525533-473f1a3a3d89">
+                  Gujarati Thali
+                </button>
+                <button class="food-btn" data-image="https://images.unsplash.com/photo-1604908177520-1e19ef8cb2e7">
+                  Punjabi Thali
+                </button>
+                <button class="food-btn" data-image="https://images.unsplash.com/photo-1551183053-bf91a1d81141">
+                  All Thalis
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= STREET FOOD ================= -->
+        <div class="md:w-1/4 p-2">
+          <div class="bg-white/80 rounded-lg shadow-md overflow-hidden">
+            <img class="h-40 w-full object-cover" src="https://images.unsplash.com/photo-1601050690597-df0568f70950"
+              id="street-img" />
+            <div class="p-4">
+              <h2 class="text-lg font-bold mb-2">Street Food</h2>
+              <p class="mb-4">India’s famous street flavors</p>
+              <div class="space-y-2">
+                <button class="food-btn" data-image="https://images.unsplash.com/photo-1601050690597-df0568f70950">
+                  Must Try
+                </button>
+                <button class="food-btn" data-image="https://images.unsplash.com/photo-1598511724690-2c59a3e9eb32">
+                  Photos
+                </button>
+                <button class="food-btn" data-image="https://images.unsplash.com/photo-1598511724690-3a11e5f0f32f">
+                  Indore
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= FAST FOOD ================= -->
+        <div class="md:w-1/4 p-2">
+          <div class="bg-white/80 rounded-lg shadow-md overflow-hidden">
+            <img class="h-40 w-full object-cover" src="https://images.unsplash.com/photo-1550547660-d9450f859349"
+              id="fast-img" />
+            <div class="p-4">
+              <h2 class="text-lg font-bold mb-2">Fast Food</h2>
+              <p class="mb-4">Burgers, Fries & Snacks</p>
+              <div class="space-y-2">
+                <button class="food-btn" data-image="https://images.unsplash.com/photo-1550547660-d9450f859349">
+                  Menu
+                </button>
+                <button class="food-btn" data-image="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+                  Open
+                </button>
+                <button class="food-btn" data-image="https://images.unsplash.com/photo-1571091718767-8c39f70f49b1">
+                  Tips
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    const buttons = document.querySelectorAll(".food-btn");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const img = btn.closest("div").querySelector("img");
+        img.src = btn.getAttribute("data-image");
+      });
+    });
+  </script>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="text-gray-100 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center">
+        <div class="md:w-1/3 p-4">
+          <h2 class="text-lg font-medium mb-2">Fresh Ingredients</h2>
+          <p>Daily fresh vegetables & spices.</p>
+        </div>
+        <div class="md:w-1/3 p-4">
+          <h2 class="text-lg font-medium mb-2">Hygienic Kitchen</h2>
+          <p>Clean and safe cooking process.</p>
+        </div>
+        <div class="md:w-1/3 p-4">
+          <h2 class="text-lg font-medium mb-2">Affordable Price</h2>
+          <p>Best taste at best price.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= IMAGE + TEXT ================= -->
+  <section class="text-gray-100 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+      <div class="lg:w-1/2 w-full mb-10 flex justify-center">
+        <img class="rounded-lg shadow-lg w-64 h-64 object-cover"
+          src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" alt="Food Image" />
+      </div>
+      <div class="lg:w-1/2 w-full lg:pl-12">
+        <h2 class="text-2xl font-bold mb-4">Taste That Feels Like Home</h2>
+        <p class="leading-relaxed">
+          We serve food that reminds you of homemade flavors with love and
+          care.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="text-gray-100 body-font">
+    <div class="container px-5 py-16 mx-auto flex flex-wrap">
+      <div class="md:w-1/4 w-full mb-6">
+        <h2 class="text-lg font-bold mb-2">Krishna Food Zone</h2>
+        <p>Serving delicious food with quality and trust.</p>
+      </div>
+
+      <div class="md:w-1/4 w-full mb-6">
+        <h2 class="text-lg font-bold mb-2">Quick Links</h2>
+        <ul>
+          <li class="hover:text-indigo-400 cursor-pointer">Home</li>
+          <li class="hover:text-indigo-400 cursor-pointer">Menu</li>
+          <li class="hover:text-indigo-400 cursor-pointer">Gallery</li>
+          <li class="hover:text-indigo-400 cursor-pointer">Contact</li>
+        </ul>
+      </div>
+
+      <div class="md:w-1/4 w-full mb-6">
+        <h2 class="text-lg font-bold mb-2">Contact</h2>
+        <p>📞 +91 98765 43210</p>
+        <p>📧 krishnafoodzone@gmail.com</p>
+        <p>📍 Your City, India</p>
+      </div>
+
+      <div class="md:w-1/4 w-full">
+        <h2 class="text-lg font-bold mb-2">Follow Us</h2>
+        <div class="flex space-x-4">
+          <button class="bg-indigo-600 px-4 py-2 rounded text-white">
+            Facebook
+          </button>
+          <button class="bg-pink-600 px-4 py-2 rounded text-white">
+            Instagram
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-black bg-opacity-50 text-center py-4 text-sm">
+      © 2025 Krishna Food Zone. All Rights Reserved.
+    </div>
+  </footer>
+</body>
+
 </html>

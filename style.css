@@ -1,0 +1,113 @@
+/* ================= BACKGROUND ================= */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover fixed;
+  position: relative;
+  color: #f3f4f6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* ================= HEADER ================= */
+header {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+header a {
+  transition: color 0.3s ease;
+}
+
+/* ================= HERO ================= */
+section.text-center h1 {
+  color: #f3f4f6;
+}
+
+section.text-center p {
+  color: #e5e7eb;
+}
+
+/* ================= CARDS ================= */
+.bg-white\/80 {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-white\/80:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+img {
+  border-radius: 0.75rem;
+}
+
+/* Buttons in cards */
+.food-btn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-bottom: 0.3rem;
+  background-color: rgba(99, 102, 241, 0.8);
+  color: #fff;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.food-btn:hover {
+  background-color: rgba(99, 102, 241, 1);
+  transform: scale(1.03);
+}
+
+/* ================= FEATURES ================= */
+section.text-gray-100 h2 {
+  color: #f3f4f6;
+}
+
+section.text-gray-100 p {
+  color: #e5e7eb;
+}
+
+/* ================= IMAGE + TEXT ================= */
+section img {
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  color: #f3f4f6;
+}
+
+footer h2 {
+  color: #f3f4f6;
+}
+
+footer p, footer li {
+  color: #d1d5db;
+}
+
+footer li:hover {
+  color: #a5b4fc;
+}
+
+footer .bg-black.bg-opacity-50 {
+  background: rgba(0, 0, 0, 0.4);
+  color: #d1d5db;
+}
+
+
