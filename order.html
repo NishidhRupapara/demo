@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Food Zone | Order</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836')] bg-cover bg-fixed text-gray-100">
+
+<div class="min-h-screen bg-black/50 backdrop-blur-md">
+
+<!-- ================= HEADER ================= -->
+<header class="text-gray-100 body-font shadow-md bg-transparent sticky top-0 z-50">
+  <div class="container mx-auto flex flex-wrap p-5 flex-row items-center">
+    <span class="text-2xl font-bold text-indigo-400">🍽 Krishna Food Zone</span>
+    <nav class="ml-auto flex flex-wrap items-center text-base space-x-5">
+      <a href="index.html" class="hover:text-indigo-400">Home</a>
+      <a href="menu.html" class="hover:text-indigo-400">Menu</a>
+      <a href="gallery.html" class="hover:text-indigo-400">Gallery</a>
+      <a href="order.html" class="text-indigo-400 font-semibold">Order</a>
+      <a href="about.html" class="text-gray-100 hover:text-indigo-400">About Us</a>
+      <a href="contact.html" class="hover:text-indigo-400">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="text-center py-20">
+  <h1 class="text-4xl font-bold mb-4">Order Your Favorite Food</h1>
+  <p class="max-w-2xl mx-auto text-gray-300 text-lg">
+    Fast delivery, fresh taste & best quality food at your doorstep.
+  </p>
+</section>
+
+<!-- ================= POPULAR ITEMS ================= -->
+<section class="container mx-auto px-6 pb-16">
+  <h2 class="text-3xl font-bold text-center mb-10">Popular Items</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+    <div class="bg-white/10 rounded-xl p-5 text-center hover:scale-105 transition">
+      <h3 class="font-semibold text-lg">Gujarati Thali</h3>
+      <p class="text-gray-300 text-sm mt-2">Authentic & Traditional</p>
+      <p class="mt-2 font-bold text-indigo-400">₹180</p>
+    </div>
+
+    <div class="bg-white/10 rounded-xl p-5 text-center hover:scale-105 transition">
+      <h3 class="font-semibold text-lg">Punjabi Thali</h3>
+      <p class="text-gray-300 text-sm mt-2">Rich & Spicy</p>
+      <p class="mt-2 font-bold text-indigo-400">₹220</p>
+    </div>
+
+    <div class="bg-white/10 rounded-xl p-5 text-center hover:scale-105 transition">
+      <h3 class="font-semibold text-lg">South Indian</h3>
+      <p class="text-gray-300 text-sm mt-2">Healthy & Tasty</p>
+      <p class="mt-2 font-bold text-indigo-400">₹160</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= ORDER FORM ================= -->
+<section class="container mx-auto px-6 pb-24">
+  <div class="max-w-3xl mx-auto bg-white/10 backdrop-blur-lg rounded-xl shadow-lg p-8">
+
+    <h2 class="text-2xl font-bold text-center mb-8">Order Details</h2>
+
+    <form class="space-y-6">
+
+      <!-- Customer Info -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <label class="block mb-2">Full Name</label>
+          <input type="text" class="w-full px-4 py-2 rounded-lg bg-black/40 border border-gray-600 focus:border-indigo-400 outline-none">
+        </div>
+
+        <div>
+          <label class="block mb-2">Mobile Number</label>
+          <input type="tel" class="w-full px-4 py-2 rounded-lg bg-black/40 border border-gray-600 focus:border-indigo-400 outline-none">
+        </div>
+      </div>
+
+      <!-- Food Selection -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <label class="block mb-2">Select Food</label>
+          <select class="w-full px-4 py-2 rounded-lg bg-black/40 border border-gray-600 focus:border-indigo-400 outline-none">
+            <option>Gujarati Thali</option>
+            <option>Punjabi Thali</option>
+            <option>South Indian</option>
+            <option>Fast Food</option>
+            <option>Desserts</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block mb-2">Quantity</label>
+          <input type="number" min="1" value="1" class="w-full px-4 py-2 rounded-lg bg-black/40 border border-gray-600 focus:border-indigo-400 outline-none">
+        </div>
+      </div>
+
+      <!-- Delivery -->
+      <div>
+        <label class="block mb-2">Delivery Type</label>
+        <div class="flex gap-6">
+          <label class="flex items-center gap-2">
+            <input type="radio" name="delivery" checked> Home Delivery
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="delivery"> Pickup
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label class="block mb-2">Delivery Address</label>
+        <textarea rows="3" class="w-full px-4 py-2 rounded-lg bg-black/40 border border-gray-600 focus:border-indigo-400 outline-none"></textarea>
+      </div>
+
+      <!-- Time -->
+      <div>
+        <label class="block mb-2">Preferred Delivery Time</label>
+        <input type="time" class="w-full px-4 py-2 rounded-lg bg-black/40 border border-gray-600 focus:border-indigo-400 outline-none">
+      </div>
+
+      <!-- Payment -->
+      <div>
+        <label class="block mb-2">Payment Method</label>
+        <select class="w-full px-4 py-2 rounded-lg bg-black/40 border border-gray-600 focus:border-indigo-400 outline-none">
+          <option>Cash on Delivery</option>
+          <option>UPI</option>
+          <option>Credit / Debit Card</option>
+        </select>
+      </div>
+
+      <!-- Instructions -->
+      <div>
+        <label class="block mb-2">Special Instructions</label>
+        <textarea rows="2" placeholder="Less spicy, no onion, etc."
+          class="w-full px-4 py-2 rounded-lg bg-black/40 border border-gray-600 focus:border-indigo-400 outline-none"></textarea>
+      </div>
+
+      <!-- Submit -->
+      <div class="text-center">
+        <button class="bg-indigo-600 hover:bg-indigo-700 px-12 py-3 rounded-lg font-semibold transition">
+          Confirm Order
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</section>
+
+<!-- ================= TRUST SECTION ================= -->
+<section class="container mx-auto px-6 pb-16 text-center">
+  <div class="grid md:grid-cols-3 gap-6 text-sm">
+    <div class="bg-white/10 p-6 rounded-xl">✔ Hygienic Kitchen</div>
+    <div class="bg-white/10 p-6 rounded-xl">🚚 Fast Delivery</div>
+    <div class="bg-white/10 p-6 rounded-xl">⭐ Trusted by 1000+ Customers</div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact" class="bg-black/60 backdrop-blur-md py-10">
+  <div class="container mx-auto px-6 text-center text-sm">
+    © 2025 Krishna Food Zone. All Rights Reserved.
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
